@@ -4,14 +4,15 @@
     margin: 0;
     padding: 0;
     outline: none;
-    
+
 }
 
-html,body {
+html,
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     min-height: 100%;
-    overflow: -moz-hidden-unscrollable;
+    /* overflow: -moz-hidden-unscrollable; */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -39,6 +40,7 @@ section {
     background-position: center;
     background-size: cover
 }
+
 /* 選單區域 */
 .header-container li {
     /* display: flex; */
@@ -110,8 +112,8 @@ section {
 
     .nav-right {
         position: absolute;
-    top: 20px;
-    right: 20px;
+        top: 20px;
+        right: 20px;
     }
 
     #menu_div {
@@ -155,31 +157,31 @@ section {
         top: 6px;
     }
 
-    #menu:checked + .line .menu {
+    #menu:checked+.line .menu {
         background: transparent;
     }
 
-    #menu:checked + .line .menu::before {
+    #menu:checked+.line .menu::before {
         transform: rotate(45deg);
     }
 
-    #menu:checked + .line .menu::after {
+    #menu:checked+.line .menu::after {
         transform: rotate(-45deg);
     }
 
-    #menu:checked + .line .menu::before,
-    #menu:checked + .line .menu::after  {
+    #menu:checked+.line .menu::before,
+    #menu:checked+.line .menu::after {
         top: 0;
         transition: top ease .3s, transform ease .3s .3s;
     }
 
-    #menu:checked ~ .menu-list {
+    #menu:checked~.menu-list {
         width: 100vw;
         top: 100px;
         backdrop-filter: blur(100px);
     }
 
-    #menu:checked ~ .menu-list .menu-list-item {
+    #menu:checked~.menu-list .menu-list-item {
         display: block;
         position: absolute;
         top: 0px;
@@ -188,18 +190,18 @@ section {
     }
 
     .menu-list {
-    display: flex;
-    flex-direction: column;
-    top: 100px;
-    left: 0;
-    z-index: 3;
-    height: 100vh;
-    background: transparent;
-    color: #000;
-    padding-top: 60px;
-    position: fixed;
-    overflow: hidden;
-    transition: all .6s;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        left: 0;
+        z-index: 3;
+        height: 100vh;
+        background: transparent;
+        color: #000;
+        padding-top: 60px;
+        position: fixed;
+        /* overflow: hidden; */
+        transition: all .6s;
     }
 
     .menu-list-item {
@@ -208,11 +210,13 @@ section {
 
     .menu-list a {
         color: #000;
-        }
+    }
 
     input#menu {
         display: none;
-    };
+    }
+
+    ;
 }
 
 @media (max-width: 480px) {
@@ -227,8 +231,8 @@ section {
 
     .nav-right {
         position: absolute;
-    top: 20px;
-    right: 20px;
+        top: 20px;
+        right: 20px;
     }
 
     #menu_div {
@@ -272,31 +276,31 @@ section {
         top: 6px;
     }
 
-    #menu:checked + .line .menu {
+    #menu:checked+.line .menu {
         background: transparent;
     }
 
-    #menu:checked + .line .menu::before {
+    #menu:checked+.line .menu::before {
         transform: rotate(45deg);
     }
 
-    #menu:checked + .line .menu::after {
+    #menu:checked+.line .menu::after {
         transform: rotate(-45deg);
     }
 
-    #menu:checked + .line .menu::before,
-    #menu:checked + .line .menu::after  {
+    #menu:checked+.line .menu::before,
+    #menu:checked+.line .menu::after {
         top: 0;
         transition: top ease .3s, transform ease .3s .3s;
     }
 
-    #menu:checked ~ .menu-list {
+    #menu:checked~.menu-list {
         width: 100vw;
         top: 100px;
         backdrop-filter: blur(100px);
     }
 
-    #menu:checked ~ .menu-list .menu-list-item {
+    #menu:checked~.menu-list .menu-list-item {
         display: block;
         position: absolute;
         top: 0px;
@@ -305,18 +309,18 @@ section {
     }
 
     .menu-list {
-    display: flex;
-    flex-direction: column;
-    top: 100px;
-    left: 0;
-    z-index: 3;
-    height: 100vh;
-    background: transparent;
-    color: #000;
-    padding-top: 60px;
-    position: fixed;
-    overflow: hidden;
-    transition: all .6s;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        left: 0;
+        z-index: 3;
+        height: 100vh;
+        background: transparent;
+        color: #000;
+        padding-top: 60px;
+        position: fixed;
+        /* overflow: hidden; */
+        transition: all .6s;
     }
 
     .menu-list-item {
@@ -325,17 +329,19 @@ section {
 
     .menu-list a {
         color: #000;
-        }
+    }
 
     input#menu {
         display: none;
-    };
+    }
 
-    .nav-right li.menu-item  {
+    ;
+
+    .nav-right li.menu-item {
         display: none;
     }
 
-   
+
 }
 
 
@@ -489,14 +495,15 @@ img {
     width: 100%;
     height: 100%;
 }
+
 #bg img {
     position: absolute;
-    top: 90%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     max-width: 600px;
-	object-fit: cover;
+    object-fit: cover;
 }
 
 .header {
@@ -505,7 +512,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    
+
 }
 
 .header h1 {
@@ -524,6 +531,7 @@ img {
     font-size: 1.5rem;
     z-index: 4
 }
+
 .text-inline {
     display: flex;
     align-content: stretch;
@@ -533,20 +541,53 @@ img {
     margin-top: 40px;
 }
 
-.iphone-container video {
-    max-width: 300px;
+.img-container img {
+    position: relative;
+    left: 50%;
+    transform: translate(-53%, -17%);
+    max-width: 930px;
+    z-index: 2;
 }
 
-@media  (min-width: 960px) {
-    .text{
-        font-size: 2rem;
+.video-container video {
+    position: absolute;
+    top: 2105px;
+    left: 50%;
+    transform: translate(-50.7%, -20%);
+    z-index: 1;
+    max-width: 697px;
+    object-fit: cover;
+}
+
+
+
+
+@media (min-width: 960px) {
+    .text {
+        font-size: 1.5rem;
     }
 
 }
+
 @media (min-width: 480px) and (max-width: 960px) {
-    .text{
+    .text {
         font-size: 0.8rem;
     }
+
+    .img-container img { 
+        max-width: 618px;
+    }
+
+    .video-container video {
+        top: 2040px;
+        transform: translate(-50.8%, -20%);
+        max-width: 463px
+     }
+
+     .section3-header {
+        top: 1750px;
+     }
+
 }
 
 @media (max-width: 480px) {
@@ -558,5 +599,74 @@ img {
         display: table-cell;
         font-size: 0.8rem;
     }
+
+    .img-container img { 
+        max-width: 120%;
+    }
+
+    .video-container video {
+        top: 1930px;
+        transform: translate(-50.8%, -20%);
+        max-width: 72%;
+     }
+
+     .section3-header {
+        top: 2000px;
+     }
 }
 
+.section3-header {
+    position: absolute;
+    left: 50%;
+    top: 1800px;
+    transform: translate(-50%, -0%);
+    color: #fff;
+}
+
+.section3-header h1 {
+    font-size: 6rem;
+}
+
+.media-scroller {
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    overscroll-behavior-inline: contain;
+    display: flex;
+    animation: scrollLeft 10s linear infinite;
+}
+
+
+.media-element {
+    flex: 0 0 100%;
+    max-width: 35%;
+    gap: 2em;
+}
+
+.media-element > video {
+    width: 100%;
+  height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+.snaps-inline {
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1em;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+@keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
