@@ -44,7 +44,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline();
 timeline.from('.section3-header h1', {
-    leeterSpacing:-10,
+    letterSpacing:-10,
     y: -150,
     skewY: 10,
     duration: 15,
@@ -54,6 +54,6 @@ ScrollTrigger.create({
     trigger: '.section3-header h1',
     start: 'top center', // 触发滚动动画的位置
     animation: timeline,
-    once: false, // 只触发一次动画
+    once: true, // 只触发一次动画
   });
 
