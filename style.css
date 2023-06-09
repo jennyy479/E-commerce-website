@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600&display=swap');
 
-* {
+*,
+*::after,
+*::before,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
     margin: 0;
     padding: 0;
-    outline: none;bg
+    outline: none;
 
 }
 
@@ -13,12 +25,25 @@ body {
     font-size: 16px;
     min-height: 100%;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+a:not([class]) {
+    text-decoration-skip: auto;
+}
 
 h1 {
     line-height: 1;
@@ -607,8 +632,13 @@ img {
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 3%;
+    border-radius: 10px;;
   
+}
+
+.media-scroller .media-element video:hover {
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+    transform: scale3d(1.01,1.01,1.01)
 }
 
 .section3-header {
@@ -631,8 +661,8 @@ img {
         transform: translateX(0);
     }
 
-    100% {
-        transform: translateX(-100%);
+    10% {
+        transform: translateX(-300%);
     }
 }
 

@@ -179,13 +179,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
     <script>
-        $(document).ready(function mouseAction(x) {
+        $(document).ready(function () {
 
             var media_scroller = $('.media-scroller')
             media_scroller.on("mouseenter", ".media-element video", function () {
                 var video_section = $(this);
                 $(this)[0].play();
-                media_scroller.css('animation', 'none');
+                media_scroller.css('animation-play-state', 'paused');
 
             })
             media_scroller.on("mouseleave", ".media-element video", function () {
@@ -193,7 +193,6 @@
                 $(this)[0].pause();
                 media_scroller.css('animation', '');
             })
-            mouseAction(x);
         });
     </script>
     <script src="main.js"></script>
